@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/onsi/gomega/format"
-	"github.com/onsi/gomega/matchers/support/goraph/bipartitegraph"
+	"github.com/ptcar2009/gomega/format"
+	"github.com/ptcar2009/gomega/matchers/support/goraph/bipartitegraph"
 )
 
 type ConsistOfMatcher struct {

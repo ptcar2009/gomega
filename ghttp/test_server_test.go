@@ -9,12 +9,12 @@ import (
 	"regexp"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/onsi/gomega/gbytes"
-	"github.com/onsi/gomega/ghttp/protobuf"
+	"github.com/ptcar2009/gomega/gbytes"
+	"github.com/ptcar2009/gomega/ghttp/protobuf"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/ghttp"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/ghttp"
 )
 
 var _ = Describe("TestServer", func() {

@@ -3,13 +3,13 @@ package assertion_test
 import (
 	"errors"
 
-	"github.com/onsi/gomega/internal/testingtsupport"
+	"github.com/ptcar2009/gomega/internal/testingtsupport"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	"github.com/onsi/gomega/internal/assertion"
-	"github.com/onsi/gomega/internal/fakematcher"
-	"github.com/onsi/gomega/types"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	"github.com/ptcar2009/gomega/internal/assertion"
+	"github.com/ptcar2009/gomega/internal/fakematcher"
+	"github.com/ptcar2009/gomega/types"
 )
 
 var _ = Describe("Assertion", func() {

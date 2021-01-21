@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
 )
 
 var _ = Describe("HaveHTTPStatus", func() {

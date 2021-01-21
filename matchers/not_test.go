@@ -1,9 +1,9 @@
 package matchers_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/matchers"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/matchers"
 )
 
 var _ = Describe("NotMatcher", func() {
@@ -26,12 +26,12 @@ var _ = Describe("NotMatcher", func() {
 
 	Context("De Morgan's laws", func() {
 		It("~(A && B) == ~A || ~B", func() {
-			Expect(input).To(Not(And(false1, false2)))
+			Expect(input).To(Not(AndGomega(false1, false2)))
 			Expect(input).To(Or(Not(false1), Not(false2)))
 		})
 		It("~(A || B) == ~A && ~B", func() {
 			Expect(input).To(Not(Or(false1, false2)))
-			Expect(input).To(And(Not(false1), Not(false2)))
+			Expect(input).To(AndGomega(Not(false1), Not(false2)))
 		})
 	})
 

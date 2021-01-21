@@ -3,8 +3,8 @@ package gomega
 import (
 	"time"
 
-	"github.com/onsi/gomega/matchers"
-	"github.com/onsi/gomega/types"
+	"github.com/ptcar2009/gomega/matchers"
+	"github.com/ptcar2009/gomega/types"
 )
 
 //Equal uses reflect.DeepEqual to compare actual with expected.  Equal is strict about
@@ -427,19 +427,19 @@ func HaveHTTPStatus(expected interface{}) types.GomegaMatcher {
 	return &matchers.HaveHTTPStatusMatcher{Expected: expected}
 }
 
-//And succeeds only if all of the given matchers succeed.
+//AndGomega succeeds only if all of the given matchers succeed.
 //The matchers are tried in order, and will fail-fast if one doesn't succeed.
-//  Expect("hi").To(And(HaveLen(2), Equal("hi"))
+//  Expect("hi").To(AndGomega(HaveLen(2), Equal("hi"))
 //
-//And(), Or(), Not() and WithTransform() allow matchers to be composed into complex expressions.
-func And(ms ...types.GomegaMatcher) types.GomegaMatcher {
+//AndGomega(), Or(), Not() and WithTransform() allow matchers to be composed into complex expressions.
+func AndGomega(ms ...types.GomegaMatcher) types.GomegaMatcher {
 	return &matchers.AndMatcher{Matchers: ms}
 }
 
 //SatisfyAll is an alias for And().
 //  Expect("hi").Should(SatisfyAll(HaveLen(2), Equal("hi")))
 func SatisfyAll(matchers ...types.GomegaMatcher) types.GomegaMatcher {
-	return And(matchers...)
+	return AndGomega(matchers...)
 }
 
 //Or succeeds if any of the given matchers succeed.

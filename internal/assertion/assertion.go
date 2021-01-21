@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/onsi/gomega/types"
+	"github.com/ptcar2009/gomega/types"
 )
 
 type Assertion struct {

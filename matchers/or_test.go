@@ -1,9 +1,9 @@
 package matchers_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/matchers"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/matchers"
 )
 
 var _ = Describe("OrMatcher", func() {
@@ -76,7 +76,7 @@ var _ = Describe("OrMatcher", func() {
 			Context("returns value of the successful matcher", func() {
 				It("false if successful matcher not going to change", func() {
 					// 3 matchers: 1st returns false, 2nd returns true and is not going to change, 3rd is never called
-					m := Or(BeNil(), And(), Equal(1))
+					m := Or(BeNil(), AndGomega(), Equal(1))
 					Expect(m.Match("hi")).To(BeTrue())
 					Expect(m.(*OrMatcher).MatchMayChangeInTheFuture("hi")).To(BeFalse())
 				})

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/onsi/gomega/format"
+	"github.com/ptcar2009/gomega/format"
 )
 
 type notADirectoryError struct {

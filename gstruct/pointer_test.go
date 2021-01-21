@@ -1,9 +1,9 @@
 package gstruct_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/gstruct"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/gstruct"
 )
 
 var _ = Describe("PointTo", func() {

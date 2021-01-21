@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/format"
-	"github.com/onsi/gomega/types"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/format"
+	"github.com/ptcar2009/gomega/types"
 )
 
 //recursive struct

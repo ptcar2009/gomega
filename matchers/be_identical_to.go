@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/onsi/gomega/format"
+	"github.com/ptcar2009/gomega/format"
 )
 
 type BeIdenticalToMatcher struct {

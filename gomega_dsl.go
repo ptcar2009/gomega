@@ -3,11 +3,11 @@ Gomega is the Ginkgo BDD-style testing framework's preferred matcher library.
 
 The godoc documentation describes Gomega's API.  More comprehensive documentation (with examples!) is available at http://onsi.github.io/gomega/
 
-Gomega on Github: http://github.com/onsi/gomega
+Gomega on Github: http://github.com/ptcar2009/gomega
 
 Learn more about Ginkgo online: http://onsi.github.io/ginkgo
 
-Ginkgo on Github: http://github.com/onsi/ginkgo
+Ginkgo on Github: http://github.com/ptcar2009/ginkgo
 
 Gomega is MIT-Licensed
 */
@@ -18,10 +18,10 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/onsi/gomega/internal/assertion"
-	"github.com/onsi/gomega/internal/asyncassertion"
-	"github.com/onsi/gomega/internal/testingtsupport"
-	"github.com/onsi/gomega/types"
+	"github.com/ptcar2009/gomega/internal/assertion"
+	"github.com/ptcar2009/gomega/internal/asyncassertion"
+	"github.com/ptcar2009/gomega/internal/testingtsupport"
+	"github.com/ptcar2009/gomega/types"
 )
 
 const GOMEGA_VERSION = "1.10.4"

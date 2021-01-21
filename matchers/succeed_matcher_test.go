@@ -4,9 +4,9 @@ import (
 	"errors"
 	"regexp"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/matchers"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/matchers"
 )
 
 func Erroring() error {

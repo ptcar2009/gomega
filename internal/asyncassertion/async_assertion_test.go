@@ -4,12 +4,12 @@ import (
 	"errors"
 	"time"
 
-	"github.com/onsi/gomega/internal/testingtsupport"
+	"github.com/ptcar2009/gomega/internal/testingtsupport"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	"github.com/onsi/gomega/internal/asyncassertion"
-	"github.com/onsi/gomega/types"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	"github.com/ptcar2009/gomega/internal/asyncassertion"
+	"github.com/ptcar2009/gomega/types"
 )
 
 var _ = Describe("Async Assertion", func() {

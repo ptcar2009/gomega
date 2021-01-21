@@ -5,7 +5,7 @@ package matchers
 import (
 	"fmt"
 
-	"github.com/onsi/gomega/format"
+	"github.com/ptcar2009/gomega/format"
 )
 
 type HaveOccurredMatcher struct {

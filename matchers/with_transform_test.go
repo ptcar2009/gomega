@@ -3,9 +3,9 @@ package matchers_test
 import (
 	"errors"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	. "github.com/onsi/gomega/matchers"
+	. "github.com/ptcar2009/ginkgo"
+	. "github.com/ptcar2009/gomega"
+	. "github.com/ptcar2009/gomega/matchers"
 )
 
 var _ = Describe("WithTransformMatcher", func() {
@@ -40,7 +40,7 @@ var _ = Describe("WithTransformMatcher", func() {
 	It("works with positive cases", func() {
 		Expect(1).To(WithTransform(plus1, Equal(2)))
 		Expect(1).To(WithTransform(plus1, WithTransform(plus1, Equal(3))))
-		Expect(1).To(WithTransform(plus1, And(Equal(2), BeNumerically(">", 1))))
+		Expect(1).To(WithTransform(plus1, AndGomega(Equal(2), BeNumerically(">", 1))))
 
 		// transform expects custom type
 		type S struct {
